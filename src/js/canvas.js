@@ -273,6 +273,7 @@ window.addEventListener('keydown', ({ key }) => {
 			break;
 		case 'w':
 			console.log('up');
+      if (event.repeat) {return}
 			player.velocity.y -= 25;
 			break;
 		case 's':
